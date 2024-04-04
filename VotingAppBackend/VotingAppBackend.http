@@ -1,0 +1,6 @@
+@VotingAppBackend_HostAddress = http://localhost:5223
+
+GET {{VotingAppBackend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
