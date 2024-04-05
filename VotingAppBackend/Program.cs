@@ -1,20 +1,8 @@
-using Microsoft.EntityFrameworkCore;
-using System.Security.Cryptography.X509Certificates;
 using VotingAppBackend.Services;
-using Autofac;
-using VotingAppBackend.AutofacModules;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using VotingAppBackend.Models;
-
-// establish mongo connection
-
 
 // builder
 var builder = WebApplication.CreateBuilder(args);
-
 
 
 // Add mongo service?
@@ -42,3 +30,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+
